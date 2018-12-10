@@ -4,12 +4,12 @@
 void SelectionSort(int val[],int tam){
     int x,y,min,aux=0;
     for(x=0;x<tam;x++){
-        min=x;
+        min=x; //supõem que o menor valor já está certo
         for(y=(x+1);y<tam;y++){
             if(val[y]<val[min])
-                min=y;
+                min=y; //se for menor que o valor suposto, guarda o novo menor valor.
         }
-        if(val[x]!=val[min]){
+        if(val[x]!=val[min]){ //se o valor de saída do segundo "for" é menor que o inicial, trocam as posições.
             aux = val[x];
             val[x] = val[min];
             val[min] = aux;
