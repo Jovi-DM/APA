@@ -4,13 +4,13 @@
 void InsertionSort(int v[], int tam){
     int i,j,aux;
     for(i=1;i<=tam-1;i++){
-        aux = v[i];
-        j=i-1;
-        while(j>=0 && v[j]>aux){
-            v[j+1] = v[j];
-            j--;
+        aux = v[i]; //segundo elemento da lista é escolhido;
+        j=i-1; //uma posição atras ao elemento escolhido;
+        while(j>=0 && v[j]>aux){ //comparação do número pivo com os anteriores;
+            v[j+1] = v[j]; //comparando;
+            j--; //volta uma posição;
         }
-        v[j+1] = aux;
+        v[j+1] = aux; //setando o novo valor para a posição 0, se for menor que o valor escolhido.
     }
 }
 
