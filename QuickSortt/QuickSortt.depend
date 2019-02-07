@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1549499947 source:c:\users\joan vitor\onedrive\documentos\ufpb\4º - semestre (engenharia de computação)\análise e projeto de algoritmos - bruno\projetos\códigos\2º\quicksortt\main.c
+	<stdio.h>
+	<stdlib.h>
+
